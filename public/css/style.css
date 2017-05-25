@@ -1,0 +1,108 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+ width: 100%;
+}
+
+#logowanie {
+    height: 50vh;
+    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.float-left {
+    float:left;
+}
+
+.float-right {
+    float:right;
+}
+
+.clear-both {
+    clear:both;
+}
+
+.pos {
+    position: inherit;
+}
+.jumbotron {
+    background-image:url("../img/jambo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#panel-select-title {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .aside {
+        display: none;
+
+    }
+    #title-search-side {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #panel-title {
+        display: none;
+    }
+    #panel-select-title {
+        display: inherit;
+    }
+}
+
+.badgebox
+{
+
+    opacity: 0;
+}
+
+.badgebox + .badge
+{
+    /* Move the check mark away when unchecked */
+    text-indent: -999999px;
+    /* Makes the badge's width stay the same checked and unchecked */
+    width: 27px;
+}
+
+.badgebox:focus + .badge
+{
+    /* Set something to make the badge looks focused */
+    /* This really depends on the application, in my case it was: */
+
+    /* Adding a light border */
+    box-shadow: inset 0px 0px 5px;
+    /* Taking the difference out of the padding */
+}
+
+.badgebox:checked + .badge
+{
+    /* Move the check mark back when checked */
+    text-indent: 0;
+}
+
+
+
+
+
+
+audio
+{
+    width: 350px;
+    transform: scaleX(1.00);
+}
